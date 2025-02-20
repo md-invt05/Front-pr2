@@ -26,13 +26,18 @@ h1 {
 // Пример собственного класса для кнопки.
 // Используем вложенность & для стилизации :hover
 .custom-button {
-  background-color: $primary-color;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: darken($primary-color, 10%);
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      // Способ 1: color.adjust
+      // background-color: color.adjust($primary-color, $lightness: -10%);
+  
+      // Или способ 2: color.scale (учтите, что результат может отличаться)
+      background-color: color.scale($primary-color, $lightness: -10%);
+    }
   }
-}
+  
