@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Привет, мир!</title>
+  <!-- Подключение Bootstrap из CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  />
+  <!-- Подключение скомпилированного CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1>Привет, мир!</h1>
+
+    <!-- Создаём строку с двумя колонками (на больших экранах) -->
+    <div class="row">
+      <div class="col-md-6 col-12">
+        <p>
+          Это пример первого текстового блока. На больших экранах
+          этот блок будет занимать половину ширины, а на мобильных устройствах
+          он будет на всю ширину экрана.
+        </p>
+      </div>
+      <div class="col-md-6 col-12">
+        <p>
+          Это пример второго текстового блока. Благодаря классам Bootstrap,
+          эти два блока будут располагаться рядом на больших экранах и
+          друг под другом на маленьких.
+        </p>
+      </div>
+    </div>
+
+    <!-- Кнопка, стилизованная через наш класс из SCSS -->
+    <button class="custom-button mt-3">Нажми меня</button>
+  </div>
+
+  <!-- Подключение Bootstrap JS (необязательно, если не нужны интерактивные компоненты) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
